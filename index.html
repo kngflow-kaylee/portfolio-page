@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNGFlow Portfolio | Kaylee Gayle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a href="#about" class="skip-link">Skip to Content</a>
+
+    <header>
+      <h1>KNGFlow | Kaylee Gayle</h1>
+      <p>Coder, Creative Writer & Educator</p>
+      <a href="#contact" class="btn">Hire Me</a>
+
+      <!-- Accessible theme toggle -->
+      <button id="theme-toggle" class="toggle-btn" aria-pressed="false">
+        🌙 Dark Mode
+      </button>
+    </header>
+
+    <main>
+      <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+          Front‑end developer and creative problem solver specializing in clean,
+          accessible web design. Skilled in HTML, CSS, and JavaScript, I build
+          responsive portfolio templates and digital products that balance
+          beauty with usability. With a background in teaching and storytelling,
+          I bring clarity, structure, and creativity to every coding project.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Filter buttons -->
+        <div class="filter-buttons" role="group" aria-label="Project filters">
+          <button data-filter="all" class="active" aria-controls="project-grid">
+            All
+          </button>
+          <button data-filter="web" aria-controls="project-grid">Web</button>
+          <button data-filter="writing" aria-controls="project-grid">
+            Writing
+          </button>
+          <button data-filter="design" aria-controls="project-grid">
+            Design
+          </button>
+        </div>
+
+        <!-- Project grid -->
+        <div id="project-grid" class="project-grid">
+          <article class="project fade-in" data-category="web">
+            <span class="tag">Web</span>
+            <h3>Portfolio Website</h3>
+            <p>
+              A responsive portfolio template built with HTML, CSS, and
+              JavaScript.
+            </p>
+          </article>
+
+          <article class="project fade-in" data-category="writing">
+            <span class="tag">Writing</span>
+            <h3>Short Story Collection</h3>
+            <p>
+              A creative anthology showcasing narrative and character
+              development.
+            </p>
+          </article>
+
+          <article class="project fade-in" data-category="design">
+            <span class="tag">Design</span>
+            <h3>Logo Design</h3>
+            <p>
+              Minimalist logo created for a startup brand with clean vector
+              graphics.
+            </p>
+          </article>
+
+          <article class="project fade-in" data-category="web">
+            <span class="tag">Web</span>
+            <h3>E-commerce Template</h3>
+            <p>
+              A modern online store layout with product filtering and shopping
+              cart features.
+            </p>
+          </article>
+
+          <article class="project fade-in" data-category="writing">
+            <span class="tag">Writing</span>
+            <h3>Blog Articles</h3>
+            <p>
+              Engaging blog posts written with SEO optimization and storytelling
+              flair.
+            </p>
+          </article>
+
+          <!-- NEW PROJECTS ADDED -->
+          <article class="project fade-in" data-category="web accessibility">
+            <span class="tag">Web</span>
+            <h3>To‑Do List App</h3>
+            <p>
+              A clean, accessible task manager with keyboard navigation and ARIA
+              live updates.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://kngflow-kaylee.github.io/Todo-List-App/"
+                target="_blank"
+                rel="noopener"
+                >🔗 Live Demo</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="project fade-in"
+            data-category="web responsive accessibility"
+          >
+            <span class="tag">Web</span>
+            <h3>Landing Page</h3>
+            <p>
+              A polished, mobile‑friendly landing page with dark mode and
+              semantic HTML structure.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://kngflow-kaylee.github.io/Landing-Page/"
+                target="_blank"
+                rel="noopener"
+                >🔗 Live Demo</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          aria-describedby="form-status"
+          action="https://formspree.io/f/meoyleal"
+          method="POST"
+        >
+          <label for="name" class="sr-only">Your Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email" class="sr-only">Your Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message" class="sr-only">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+        <!-- Live region for feedback -->
+        <div id="form-status" aria-live="polite" class="sr-only"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 KNGFlow</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
