@@ -50,7 +50,6 @@ This portfolio exists to:
 
 View Page One here:  
 **https://kngflow-kaylee.github.io/portfolio-page**  
-*(Replace with your actual URL if different.)*
 
 ---
 
